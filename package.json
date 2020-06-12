@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "rm -rf ./development && rm -rf ./.cache && yarn run css && parcel public/index.html --out-dir development -p 3000",
-    "build": "npm run css && parcel build public/index.html --out-dir dist --public-url ./",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
     "css": "postcss src/css/style.css -o public/tailwind.css"
   },
   "repository": {
